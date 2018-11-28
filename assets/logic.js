@@ -61,9 +61,33 @@ $(document).on("click", "#add-train-btn", function (e) {
 
         // Add each train's data into the table
         $("#train-table > tbody").append("<tr><td>" + tName + "</td><td>" + tDest + "</td><td>" +
-            tFreq + "</td><td>" + tArrival + "</td><td>"); 
+            tFreq + "</td><td>" + tArrival + "</td><td>");
     });
-    // // Create the new row
+
+
+    //  Minutes JS
+    // create variables to store train time and frequency
+    // var currentTime = moment();
+
+    // Calculate difference between times
+    // var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+
+    // Calculate minutes until the next train
+    // var tMinutesTillTrain = tFrequency - tRemainder;
+
+    // Variable calculating time of next train using minutes until train
+    // var nextTrain = moment().add(tMinutesTillTrain, "minutes");
+
+
+});
+
+
+
+
+
+
+
+   // // Create the new row
     // var newRow = $("<tr>").append(
     //     $("<td>").text(trainName),
     //     $("<td>").text(trainDest),
@@ -74,5 +98,3 @@ $(document).on("click", "#add-train-btn", function (e) {
 
     // // Append the new row to the table
     // $("#train-table > tbody").append(newRow);
-});
-
