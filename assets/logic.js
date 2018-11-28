@@ -34,8 +34,8 @@ $(document).on("click", "#add-train-btn", function (e) {
     database.ref().push(newTrain);
 
     // Logs everything to console
-    console.log(newTrain.train);
-    console.log(newTrain.destination);
+    console.log(newTrain.name);
+    console.log(newTrain.desination);
     console.log(newTrain.frequency);
     console.log(newTrain.nextArrival);
 
@@ -54,7 +54,7 @@ $(document).on("click", "#add-train-btn", function (e) {
         console.log(childSnapshot.val());
 
         // Store everything into a variable.
-        var tName = childSnapshot.val().name;
+        var tName = childSnapshot.val().train;
         var tDest = childSnapshot.val().destination;
         var tFreq = childSnapshot.val().frequency;
         var tArrival = childSnapshot.val().nextArrival;
