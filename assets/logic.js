@@ -34,8 +34,8 @@ $(document).on("click", "#add-train-btn", function (e) {
     database.ref().push(newTrain);
 
     // Logs everything to console
-    console.log(newTrain.name);
-    console.log(newTrain.desination);
+    console.log(newTrain.train);
+    console.log(newTrain.destination);
     console.log(newTrain.frequency);
     console.log(newTrain.nextArrival);
 
