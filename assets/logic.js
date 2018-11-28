@@ -29,7 +29,7 @@ $(document).on("click", "#add-train-btn", function (e) {
         frequency: frequency,
         nextArrival: nextArrival,
     }
-
+  
     // Uploads train data to the database
     database.ref().push(newTrain);
 
